@@ -125,15 +125,16 @@ public class SpeedActivity extends AppCompatActivity{
                 if (status == false)
                     //Here, the Location Service gets bound and the GPS Speedometer gets Active.
                     bindService();
-                locate = new ProgressDialog(SpeedActivity.this);
-                locate.setIndeterminate(true);
-                locate.setCancelable(false);
-                locate.setMessage("Getting Location...");
-                locate.show();
-                start.setVisibility(View.GONE);
-                pause.setVisibility(View.VISIBLE);
-                pause.setText("Pause");
-                stop.setVisibility(View.VISIBLE);
+                    locate = new ProgressDialog(SpeedActivity.this);
+                    locate.setIndeterminate(true);
+                    locate.setCancelable(false);
+                    locate.setMessage("Getting Location...");
+                    locate.show();
+                    start.setVisibility(View.GONE);
+                    pause.setVisibility(View.VISIBLE);
+                    pause.setText("Pause");
+                    stop.setVisibility(View.VISIBLE);
+
 
 
             }
